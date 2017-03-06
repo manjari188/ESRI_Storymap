@@ -1,0 +1,93 @@
+.form-group.form-geocoder {
+
+  input {
+    position: relative;
+    z-index: 1;
+  }
+
+  .esriGeocoderResults {
+    display: block;
+    position: absolute;
+    padding: 0;
+    margin-top: -1px;
+    height: auto;
+    z-index: 0;
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      li {
+        font-size: 14px;
+        padding: 6px 12px;
+
+        &:focus, &:hover {
+          outline: none;
+          background: $Calcite_Highlight_Blue_150;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .action-btn-wrapper {
+    margin-top: 5px;
+  }
+
+  .locator, .find-on-map {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+  }
+
+  .locator {
+    margin-right: 5px;
+  }
+
+  .locating-text, .locate-text, .find-on-map-text {
+    margin-left: 18px;
+  }
+
+  .locator-icon, .find-on-map-icon {
+    position: absolute;
+    height: 100%;
+    width: 30px;
+    top: 0;
+    left: 0;
+  }
+
+  .icon-location, .icon-map-pin, .loading-gif {
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    top: 6px;
+    left: 6px;
+  }
+
+  .loading-gif, .locating-text {
+    display: none;
+  }
+
+  .loading {
+    .icon-location, .locate-text {
+      display: none;
+    }
+
+    .loading-gif, .locating-text {
+      display: block;
+    }
+  }
+
+}
+
+.mobile-save-button {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .mobile-save-button {
+    display: block;
+    margin-top: 5px;
+  }
+}

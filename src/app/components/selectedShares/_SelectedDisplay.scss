@@ -1,0 +1,61 @@
+.crowdsource-app .overlay-panel.selected-share {
+
+  .loading {
+    text-align: center;
+    text-transform: uppercase;
+
+    img {
+      width: 50px;
+    }
+  }
+
+  .selected-display {
+    height: calc(100% -  54px);
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+
+    .padded-column {
+      padding: 15px;
+    }
+  }
+
+  .share-title {
+    height: auto;
+    margin-bottom: 0;
+  }
+
+  .share-location-wrapper {
+    line-height: 1em;
+  }
+
+  .media-photo.lazy-image.loaded {
+    @include animation(fadeIn 0.5s);
+  }
+
+  .media-section {
+    position: relative;
+
+    img {
+      height: auto;
+      width: 100%;
+      max-width: none;
+    }
+  }
+
+  .review-section {
+    padding: 15px;
+    margin: 0;
+
+    .review-header {
+      height: 1em;
+      margin-top: 0;
+      font-weight: bold;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .selected-display {
+      height: calc(100% -  44px);
+    }
+  }
+}
